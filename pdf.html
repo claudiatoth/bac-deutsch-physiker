@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Die Physiker — BAC kompakt · Claudia Toth</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm 16mm 20mm 16mm;
+            @bottom-center {
+                content: "ʚଓ Claudia Toth · Die Physiker — BAC kompakt · © 2026 — Toate drepturile rezervate · S. " counter(page) " / " counter(pages);
+                font-size: 8.5pt; color: #047857; font-family: 'Georgia', serif;
+            }
+        }
+        @page :first { margin: 0; @bottom-center { content: ""; } }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: #1F1B16; line-height: 1.45; font-size: 10.5pt;
+            -webkit-print-color-adjust: exact; print-color-adjust: exact;
+        }
+
+        /* ===== COVER ===== */
+        .cover {
+            width: 100%; min-height: 100vh; padding: 80px 60px 60px;
+            text-align: center; display: flex; flex-direction: column;
+            align-items: center; justify-content: flex-start; page-break-after: always;
+        }
+        .cover-symbol { font-size: 90pt; color: #047857; line-height: 1; margin: 30px 0 15px; font-family: 'Segoe UI Emoji', sans-serif; }
+        .cover-divider { width: 140px; height: 3px; background: #D4A574; margin: 20px 0; border: none; }
+        .cover-title { font-size: 30pt; color: #065f46; font-weight: bold; margin: 14px 0 18px; font-family: 'Georgia', serif; }
+        .cover-subtitle { font-size: 13pt; color: #5A5147; font-style: italic; margin-bottom: 8px; }
+        .cover-level { font-size: 12pt; color: #047857; font-weight: bold; margin-bottom: 60px; }
+        .cover-author { font-size: 20pt; color: #065f46; font-weight: bold; margin-bottom: 8px; }
+        .cover-series { font-size: 10pt; color: #5A5147; margin-bottom: 80px; }
+        .cover-copyright { margin-top: auto; font-size: 10pt; color: #047857; font-weight: 600; }
+        .cover-notice { font-size: 9pt; color: #8a8175; font-style: italic; margin-top: 6px; }
+
+        /* ===== CONTENT ===== */
+        #pdf-content { padding: 0; }
+        h1, h2, h3, h4, h5 { color: #065f46; font-family: 'Georgia', serif; }
+        h4 { font-size: 12pt; margin: 8px 0 5px; page-break-after: avoid; }
+        h5 { font-size: 11pt; margin: 6px 0 4px; }
+        p { margin-bottom: 5px; }
+        ul, ol { margin: 4px 0 8px 20px; }
+        li { margin-bottom: 3px; }
+        strong { color: #065f46; }
+        em { color: #5A5147; }
+        table { width: 100%; border-collapse: collapse; margin: 6px 0 10px; font-size: 9.5pt; page-break-inside: avoid; }
+        th { text-align: left; font-weight: bold; color: #065f46; padding: 4px 8px; border-bottom: 2px solid #047857; }
+        td { padding: 4px 8px; border-bottom: 1px solid #d1fae5; vertical-align: top; }
+        td.nomen, td.verb { color: #047857; font-weight: bold; white-space: nowrap; }
+
+        /* Sub-section → titlu de capitol în PDF; conținut mereu vizibil */
+        .sub-section { page-break-inside: avoid; margin: 10px 0; }
+        .sub-section-header { background: transparent; color: #065f46; font-weight: bold; font-size: 12.5pt; padding: 4px 0; border-bottom: 2px solid #047857; margin-bottom: 6px; }
+        .sub-section-header .sub-arrow { display: none; }
+        .sub-section-content { display: block !important; }
+
+        /* Casete */
+        .theory-box { border-left: 3px solid #047857; padding: 5px 12px; margin: 7px 0; page-break-inside: avoid; }
+        .claudia-note { border-left: 3px solid #10b981; background: #ecfdf5; padding: 6px 12px; margin: 7px 0; page-break-inside: avoid; }
+        .claudia-note-avatar { display: none; }
+        .claudia-note .speaker { font-weight: bold; color: #065f46; font-size: 9.5pt; }
+        .claudia-note .speaker::before { content: "👩‍🏫 "; }
+        .claudia-note .text { color: #1F1B16; font-size: 9.5pt; }
+        .bac-wissen { background: #d1fae5; border-left: 3px solid #047857; padding: 5px 12px; margin: 6px 0; color: #065f46; font-size: 9.5pt; page-break-inside: avoid; }
+        .bac-wissen::before { content: "📌 BAC-Wissen: "; font-weight: bold; }
+        .strategie { background: #F5F0E8; border-left: 3px solid #D4A574; padding: 5px 12px; margin: 6px 0; color: #5A5147; font-style: italic; font-size: 9pt; page-break-inside: avoid; }
+        .strategie::before { content: "➡️ Strategie: "; font-weight: bold; font-style: normal; color: #B88848; }
+        .zitat { border-left: 3px solid #D4A574; padding: 4px 12px; margin: 6px 0; font-style: italic; }
+
+        /* SOS */
+        .sos-box { border: 2px solid #10b981; border-radius: 8px; padding: 10px 14px; margin: 8px 0; page-break-inside: avoid; }
+        .sos-box h4 { margin-bottom: 6px; }
+        .sos-row { display: flex; gap: 8px; padding: 3px 0; border-bottom: 1px solid #d1fae5; }
+        .sos-row:last-child { border-bottom: none; }
+        .sos-k { min-width: 110px; font-weight: bold; color: #047857; }
+        .sos-v { flex: 1; }
+
+        /* Chips */
+        .merkmale { margin: 5px 0; }
+        .chip { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 8.5pt; font-weight: bold; margin: 2px; }
+        .chip.plus { background: #d1fae5; color: #065f46; }
+        .chip.minus { background: #fee2e2; color: #991b1b; }
+
+        /* Figurenkonstellation */
+        .konstell { margin: 8px 0; }
+        .konstell-center { background: #047857; color: #fff; text-align: center; font-weight: bold; padding: 6px; border-radius: 6px; margin-bottom: 6px; }
+        .konstell-card { border-left: 3px solid #D4A574; padding: 4px 10px; margin: 3px 0; }
+        .konstell-card .kf { font-weight: bold; color: #065f46; }
+        .konstell-card .kb { font-size: 9pt; color: #5A5147; }
+
+        /* Schreibvorlage + Musterantwort */
+        .vorlage { border: 1px solid #E5DCC9; border-radius: 8px; padding: 8px 12px; margin: 7px 0; page-break-inside: avoid; }
+        .vorlage .teil { font-weight: bold; color: #065f46; margin-top: 5px; }
+        .vorlage .redemittel { font-style: italic; }
+        .muster-btn { display: none; }
+        .muster-antwort { display: block !important; border-left: 3px solid #10b981; background: #ecfdf5; padding: 6px 12px; margin: 5px 0; }
+
+        /* Modell-Prüfung */
+        .modell-aufgabe { border-left: 3px solid #047857; padding: 4px 12px; margin: 8px 0 4px; font-weight: bold; color: #065f46; }
+        .modell-aufgabe .punkte { float: right; background: #047857; color: #fff; border-radius: 8px; padding: 0 8px; font-size: 8.5pt; }
+        .gedicht { border: 1px solid #E5DCC9; border-radius: 6px; padding: 8px 14px; margin: 6px 0; font-style: italic; page-break-inside: avoid; }
+        .gedicht .titel { font-weight: bold; color: #065f46; font-style: normal; display: block; margin-bottom: 4px; }
+        .gedicht .strophe { margin-bottom: 6px; }
+        .warum { background: #F5F0E8; border-left: 3px solid #D4A574; padding: 5px 12px; margin: 6px 0; font-size: 9pt; color: #5A5147; page-break-inside: avoid; }
+        .warum::before { content: "🏅 Warum volle Punktzahl? "; font-weight: bold; color: #B88848; }
+        .merken { background: #F3E6CF; padding: 0 2px; font-weight: bold; }
+
+        .new-section { page-break-before: always; }
+    </style>
+</head>
+<body>
+
+<div class="cover">
+    <img src="images/logo-claudia.png" alt="Claudia Toth — Curs autorizat de limba germană" style="width:360px; max-width:80%; height:auto; display:block; margin:20px auto 10px;">
+    <hr class="cover-divider">
+    <h1 class="cover-title">Die Physiker</h1>
+    <hr class="cover-divider">
+    <p class="cover-subtitle">Friedrich Dürrenmatt (1962) · Moderne / Nachkriegsliteratur · Komödie (Tragikomödie) — dein „BAC auf einen Blick"</p>
+    <p class="cover-level">BAC Deutsch (Muttersprache) · Limba și literatura germană maternă</p>
+    <p class="cover-author">Claudia Toth</p>
+    <p class="cover-series">Figuren · Themen · Symbole · Aufbau · Interpretation · Prüfungsfragen · Modell-Prüfung</p>
+    <div class="cover-copyright">© 2026 Claudia Toth · Toate drepturile rezervate</div>
+    <p class="cover-notice">All rights reserved · Reproducerea fără acord scris este interzisă.</p>
+</div>
+
+<div id="pdf-content"></div>
+
+<script src="theory.js"></script>
+<script src="modell.js"></script>
+<script src="pdf-builder.js"></script>
+
+</body>
+</html>

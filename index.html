@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAC kompakt: Die Physiker (Friedrich Dürrenmatt) · Claudia Toth</title>
+    <meta property="og:title" content="BAC kompakt: Die Physiker — Friedrich Dürrenmatt · Claudia Toth">
+    <meta property="og:description" content="Alles für das Abitur / BAC Deutsch (Muttersprache) zu Dürrenmatts Komödie „Die Physiker": Inhalt, Figuren (Möbius, von Zahnd, die Agenten), die Verantwortung der Wissenschaft, die schlimmstmögliche Wendung, Wahnsinn und Vernunft, Form (Komödie/Tragikomödie), Interpretation, BAC-Training mit Musterantworten und Modell-Prüfung · Claudia Toth">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta name="description" content="Die Physiker (Friedrich Dürrenmatt, 1962) — kompakte BAC-Vorbereitung (germană maternă): Komödie/Tragikomödie, die Verantwortung der Wissenschaft, Möbius, von Zahnd, die schlimmstmögliche Wendung, Wahnsinn und Vernunft, Charakterisierung, Interpretation, Prüfungsfragen mit Musterantworten, Modell-Prüfung, Selbsttest · Claudia Toth">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#top" class="navbar-logo">ʚଓ Claudia Toth</a>
+        <ul class="navbar-menu">
+            <li><a href="#werk" onclick="openSection(0)">📖 Das Werk</a></li>
+            <li><a href="#training" onclick="openSection(1)">🎯 BAC-Training</a></li>
+            <li><a href="#ex1" onclick="openSection(2)">Übung 1</a></li>
+            <li><a href="#ex2" onclick="openSection(3)">Übung 2</a></li>
+            <li><a href="#ex3" onclick="openSection(4)">Übung 3</a></li>
+            <li><a href="#ex4" onclick="openSection(5)">Übung 4</a></li>
+            <li><a href="#ex5" onclick="openSection(6)">Übung 5</a></li>
+            <li><a href="#modell" onclick="openSection(7)">📝 Modelle</a></li>
+            <li><a href="#flashcards" onclick="openSection(8)">📇 Karten</a></li>
+            <li><a href="#final-test" onclick="openSection(9)">✅ Selbsttest</a></li>
+            <li><a href="physiker-bac.pdf" download>📄 PDF</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="top">
+        <div class="header">
+            <img src="images/logo-claudia-crem.png" alt="Claudia Toth — Curs autorizat de limba germană" style="display:block; width:280px; max-width:72%; height:auto; margin:0 auto 20px;">
+            <h1>Die Physiker — BAC kompakt</h1>
+            <p class="subtitle">Friedrich Dürrenmatt (1962) · Moderne / Nachkriegsliteratur · Komödie (Tragikomödie) — alles fürs Abitur / BAC Deutsch (Muttersprache)</p>
+            <p>Claudia Toth · Limba și literatura germană maternă</p>
+        </div>
+
+        <div class="claudia-intro">
+            <img src="images/annette.png" alt="Claudia" class="claudia-intro-avatar">
+            <div class="claudia-intro-text">
+                <strong>Willkommen!</strong> Diese Lektion ist dein <strong>„BAC auf einen Blick"</strong> zu <em>Die Physiker</em> — Dürrenmatts berühmter <strong>grotesker Komödie</strong> über die Verantwortung der Wissenschaft, kompakt und ohne Ballast.
+                Lies zuerst <strong>„Das Werk verstehen"</strong>, übe dann mit den <strong>Prüfungsfragen</strong> und der <strong>Modell-Prüfung</strong>, und teste dich am Ende selbst.
+                <span class="ro-tip">➡️ Sfat: secțiunea „BAC auf einen Blick" e pagina de memorat pe de rost — autor, an, epocă, gen îți trebuie automat în orice Einleitung.</span>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- ============ 0. DAS WERK VERSTEHEN ============ -->
+            <div class="section" id="werk">
+                <div class="section-header" onclick="toggleMainSection(0)"><h3>ʚଓ 📖 Das Werk verstehen</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-0"><div id="theory-container"></div></div>
+            </div>
+
+            <!-- ============ 1. BAC-TRAINING & SCHREIBVORLAGEN ============ -->
+            <div class="section" id="training">
+                <div class="section-header" onclick="toggleMainSection(1)"><h3>ʚଓ 🎯 BAC-Training &amp; Schreibvorlagen</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-1"><div id="training-container"></div></div>
+            </div>
+
+            <!-- ============ 2. ÜBUNG 1 ============ -->
+            <div class="section" id="ex1">
+                <div class="section-header" onclick="toggleMainSection(2)"><h3>ʚଓ 🧠 Übung 1: Wissen prüfen</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-2">
+                    <div id="ex1-container"></div>
+                    <div class="btn-container">
+                        <button class="btn btn-check" onclick="checkExercise(1)">✓ Prüfen</button>
+                        <button class="btn btn-reset" onclick="resetExercise(1)">↻ Zurücksetzen</button>
+                    </div>
+                    <div class="score" id="score-1"></div>
+                </div>
+            </div>
+
+            <!-- ============ 3. ÜBUNG 2 ============ -->
+            <div class="section" id="ex2">
+                <div class="section-header" onclick="toggleMainSection(3)"><h3>ʚଓ 🧠 Übung 2: Zitate &amp; ihre Bedeutung</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-3">
+                    <div id="ex2-container"></div>
+                    <div class="btn-container">
+                        <button class="btn btn-check" onclick="checkExercise(2)">✓ Prüfen</button>
+                        <button class="btn btn-reset" onclick="resetExercise(2)">↻ Zurücksetzen</button>
+                    </div>
+                    <div class="score" id="score-2"></div>
+                </div>
+            </div>
+
+            <!-- ============ 4. ÜBUNG 3 ============ -->
+            <div class="section" id="ex3">
+                <div class="section-header" onclick="toggleMainSection(4)"><h3>ʚଓ 🧠 Übung 3: Begriffe &amp; Stilmittel</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-4">
+                    <div id="ex3-container"></div>
+                    <div class="btn-container">
+                        <button class="btn btn-check" onclick="checkExercise(3)">✓ Prüfen</button>
+                        <button class="btn btn-reset" onclick="resetExercise(3)">↻ Zurücksetzen</button>
+                    </div>
+                    <div class="score" id="score-3"></div>
+                </div>
+            </div>
+
+            <!-- ============ 5. ÜBUNG 4 ============ -->
+            <div class="section" id="ex4">
+                <div class="section-header" onclick="toggleMainSection(5)"><h3>ʚଓ 🧠 Übung 4: Inhaltsangabe vervollständigen</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-5">
+                    <div id="ex4-container"></div>
+                    <div class="btn-container">
+                        <button class="btn btn-check" onclick="checkExercise(4)">✓ Prüfen</button>
+                        <button class="btn btn-reset" onclick="resetExercise(4)">↻ Zurücksetzen</button>
+                    </div>
+                    <div class="score" id="score-4"></div>
+                </div>
+            </div>
+
+            <!-- ============ 6. ÜBUNG 5 ============ -->
+            <div class="section" id="ex5">
+                <div class="section-header" onclick="toggleMainSection(6)"><h3>ʚଓ 🧠 Übung 5: Bewerbungsbrief (Subiect III)</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-6">
+                    <div id="ex5-container"></div>
+                    <div class="btn-container">
+                        <button class="btn btn-check" onclick="checkExercise(5)">✓ Prüfen</button>
+                        <button class="btn btn-reset" onclick="resetExercise(5)">↻ Zurücksetzen</button>
+                    </div>
+                    <div class="score" id="score-5"></div>
+                </div>
+            </div>
+
+            <!-- ============ 7. MODELL-PRÜFUNG ============ -->
+            <div class="section" id="modell">
+                <div class="section-header" onclick="toggleMainSection(7)"><h3>ʚଓ 📝 Modell-Prüfung — Subiect I, II &amp; III komplett gelöst</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-7"><div id="modell-container"></div></div>
+            </div>
+
+            <!-- ============ 8. FLASHCARDS ============ -->
+            <div class="section" id="flashcards">
+                <div class="section-header" onclick="toggleMainSection(8)"><h3>ʚଓ 📇 Lernkarten — Figuren, Begriffe, Zitate</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-8"><div id="flashcards-container"></div></div>
+            </div>
+
+            <!-- ============ 9. SELBSTTEST ============ -->
+            <div class="section" id="final-test">
+                <div class="section-header" onclick="toggleMainSection(9)"><h3>ʚଓ ✅ Selbsttest — Bist du bereit fürs BAC?</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-9"><div id="final-test-container"></div></div>
+            </div>
+
+            <!-- ============ SCHREIBWERKSTATT (Google Form) ============ -->
+            <div style="margin-top: 36px; border: 2px solid #10b981; border-radius: 14px; background: #ecfdf5; padding: 24px 22px; text-align: center;">
+                <p style="font-size: 1.25rem; font-weight: bold; color: #065f46; margin: 0;">✍️ Schreibwerkstatt — jetzt bist du dran!</p>
+                <p style="margin: 12px 0 4px; color: #1F1B16;">Du hast die <strong>Modell-Prüfung</strong> gesehen? Schreib jetzt <strong>selbst</strong> ein Subiect I, II oder III — und <strong>schick es mir</strong>. Ich lese es und gebe dir <strong>persönliches Feedback</strong>! 💚</p>
+                <p style="margin: 0 0 16px; font-style: italic; color: #5A5147; font-size: 0.92rem;">➡️ Scrie TU acum un subiect (interpretare, Charakterisierung sau Bewerbung) și trimite-mi-l prin formular — îți răspund cu corectură și sfaturi.</p>
+                <a href="https://forms.gle/rkeNCSzgrHX6T3jW8" target="_blank" rel="noopener" style="display: inline-block; background: #10b981; color: #ffffff; padding: 13px 30px; border-radius: 9px; font-weight: bold; text-decoration: none; font-size: 1.05rem;">📝 Meine Lösung einsenden →</a>
+            </div>
+
+            <div class="theory-box" style="text-align: center; margin-top: 40px;">
+                <p style="font-size: 1.3rem; font-weight: bold; color: #065f46;">🎉 Viel Erfolg beim Abitur!</p>
+                <p style="margin-top: 12px;">Du kennst jetzt Die Physiker, Dürrenmatts berühmte <strong>groteske Komödie</strong>, die Themen <strong>die Verantwortung der Wissenschaft, Wahnsinn ↔ Vernunft und die schlimmstmögliche Wendung</strong>, die Figuren (Möbius, „Newton" &amp; „Einstein", von Zahnd), den <strong>Aufbau (Komödie in zwei Akten, klassische Einheiten)</strong> samt dem Leitgedanken <strong>„Was einmal gedacht wurde, kann nicht mehr zurückgenommen werden"</strong> sowie das Vergleichsgedicht <strong>„Der Zauberlehrling"</strong> (Goethe, die entfesselten Kräfte). Mit den <strong>Musterantworten</strong> und der <strong>Modell-Prüfung</strong> hast du für jedes Subiect eine klare Struktur. <em>Denk an die Einleitung: Autor (Dürrenmatt) — Werk — Jahr (1962) — Epoche (Moderne/Nachkriegszeit)!</em> ⚛️</p>
+                <p style="margin-top: 10px; font-style: italic; color: #5A5147;">Limba și literatura germană maternă · Claudia Toth</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="theory.js"></script>
+    <script src="exercises.js"></script>
+    <script src="flashcards.js"></script>
+    <script src="final-test.js"></script>
+    <script src="modell.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
