@@ -1,10 +1,10 @@
 // ============================================
 // MODELL-PRÜFUNG — Die Physiker (BAC germană maternă)
-// Claudia Toth · Subiect I + II + III rezolvate complet
+// Claudia Toth · Prüfungsteil I + II + III rezolvate complet
 // „Versuch zuerst selbst → dann aufdecken". Galben = zu merken. 🏅 = warum 10p.
 // Reutilizează toggleMuster() din theory.js.
-// Subiect I: Goethe „Der Zauberlehrling" (1797, Auszug) — verbatim verifiziert (gemeinfrei).
-// Subiect II: Charakterisierung Möbius (Dürrenmatt, Die Physiker) — opera studiată.
+// Prüfungsteil I: Goethe „Der Zauberlehrling" (1797, Auszug) — verbatim verifiziert (gemeinfrei).
+// Prüfungsteil II: Charakterisierung Möbius (Dürrenmatt, Die Physiker) — opera studiată.
 // ============================================
 
 const modellHTML = `
@@ -12,13 +12,13 @@ const modellHTML = `
         <img src="images/annette.png" alt="Claudia" class="claudia-note-avatar">
         <div class="claudia-note-content">
             <div class="speaker">Claudia erklärt</div>
-            <div class="text">Aici ai o <strong>probă BAC completă</strong> (Subiect I + II + III), rezolvată integral. La <strong>Subiect I</strong> ai „Der Zauberlehrling" de Goethe (Auszug) — perechea perfectă: ucenicul dezlănțuie forțe pe care nu le mai poate opri („<strong>Die ich rief, die Geister, / Werd ich nun nicht los</strong>"), exact ca <strong>cunoașterea</strong> din Die Physiker, care nu mai poate fi retrasă. La <strong>Subiect II</strong> ai o Charakterisierung completă a lui <strong>Möbius</strong>. <strong>Încearcă întâi singur</strong>, apoi dezvăluie. Ce e <span class="merken">galben</span> merită memorat.</div>
+            <div class="text">Aici ai o <strong>probă BAC completă</strong> (Prüfungsteil I + II + III), rezolvată integral. La <strong>Prüfungsteil I</strong> ai „Der Zauberlehrling" de Goethe (Auszug) — perechea perfectă: ucenicul dezlănțuie forțe pe care nu le mai poate opri („<strong>Die ich rief, die Geister, / Werd ich nun nicht los</strong>"), exact ca <strong>cunoașterea</strong> din Die Physiker, care nu mai poate fi retrasă. La <strong>Prüfungsteil II</strong> ai o Charakterisierung completă a lui <strong>Möbius</strong>. <strong>Încearcă întâi singur</strong>, apoi dezvăluie. Ce e <span class="merken">galben</span> merită memorat.</div>
         </div>
     </div>
-    <div class="strategie">Subiect II (Charakterisierung pe opera studiată) se învață și aduce nota. La Subiect I textul e necunoscut → memorezi METODA. La III memorezi tiparul scrisorii.</div>
+    <div class="strategie">Prüfungsteil II (Charakterisierung pe opera studiată) se învață și aduce nota. La Prüfungsteil I textul e necunoscut → memorezi METODA. La III memorezi tiparul scrisorii.</div>
 
     <!-- ================= SUBIECT I ================= -->
-    <div class="modell-aufgabe"><span class="punkte">30 Punkte</span><h4 style="margin:0;">📄 Subiect I — Textinterpretation</h4></div>
+    <div class="modell-aufgabe"><span class="punkte">30 Punkte</span><h4 style="margin:0;">📄 Prüfungsteil I — Textinterpretation</h4></div>
     <p>Lesen Sie den Gedichtauszug und bearbeiten Sie die Aufgaben.</p>
     <div class="gedicht">
         <span class="titel">Johann Wolfgang von Goethe: Der Zauberlehrling (1797) — Auszug</span>
@@ -67,7 +67,7 @@ const modellHTML = `
     </div>
 
     <!-- ================= SUBIECT II ================= -->
-    <div class="modell-aufgabe"><span class="punkte">30 Punkte</span><h4 style="margin:0;">📝 Subiect II — Charakterisierung (Möbius)</h4></div>
+    <div class="modell-aufgabe"><span class="punkte">30 Punkte</span><h4 style="margin:0;">📝 Prüfungsteil II — Charakterisierung (Möbius)</h4></div>
     <p><strong>Aufgabe:</strong> Charakterisieren Sie die Figur <em>Johann Wilhelm Möbius</em> aus Dürrenmatts „Die Physiker". Gehen Sie auf soziale Stellung, Charakterzüge, Entwicklung und Beziehungen ein.</p>
     <button class="muster-btn" onclick="toggleMuster('s2')">🔓 Muster-Charakterisierung aufdecken</button>
     <div class="muster-antwort" id="s2">
@@ -87,7 +87,7 @@ const modellHTML = `
     </div>
 
     <!-- ================= SUBIECT III ================= -->
-    <div class="modell-aufgabe"><span class="punkte">30 Punkte</span><h4 style="margin:0;">✉️ Subiect III — Bewerbungsbrief</h4></div>
+    <div class="modell-aufgabe"><span class="punkte">30 Punkte</span><h4 style="margin:0;">✉️ Prüfungsteil III — Bewerbungsbrief</h4></div>
     <p><strong>Aufgabe:</strong> Sie heißen Robert Neumann und bewerben sich auf eine Anzeige des <em>Science Centers „ExperiMINT"</em> um einen Ferienjob als Aushilfe (Empfang &amp; Besucherführung). Schreiben Sie einen vollständigen Bewerbungsbrief.</p>
     <button class="muster-btn" onclick="toggleMuster('s3')">🔓 Muster-Bewerbung aufdecken</button>
     <div class="muster-antwort" id="s3">

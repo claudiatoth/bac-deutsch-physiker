@@ -30,7 +30,7 @@ const finalTestData = [
     { type: 'multiple', category: '💡 Deutung', question: 'Warum ist das Opfer der Physiker am Ende vergebens?', options: ['sie werden entdeckt', 'von Zahnd hat die Formel längst kopiert', 'sie fliehen', 'der Inspektor greift ein'], correct: 'von Zahnd hat die Formel längst kopiert', explanation: 'Die schlimmstmögliche Wendung: die wahnsinnige Ärztin will die Weltherrschaft.' },
 
     // ✍️ Schreiben (1)
-    { type: 'multiple', category: '✍️ Schreiben', question: 'Welches Element des Bewerbungsbriefs (Subiect III) bringt 2 Punkte?', options: ['die Unterschrift', 'die Betreffzeile', 'das Datum', 'die Anlagen'], correct: 'die Betreffzeile', explanation: 'Betreffzeile (2 P) und Anrede (2 P) sind die punktstärksten Pflicht-Elemente.' }
+    { type: 'multiple', category: '✍️ Schreiben', question: 'Welches Element des Bewerbungsbriefs (Prüfungsteil III) bringt 2 Punkte?', options: ['die Unterschrift', 'die Betreffzeile', 'das Datum', 'die Anlagen'], correct: 'die Betreffzeile', explanation: 'Betreffzeile (2 P) und Anrede (2 P) sind die punktstärksten Pflicht-Elemente.' }
 ];
 
 let currentQuestionIndex = 0;

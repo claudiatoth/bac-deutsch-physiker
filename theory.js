@@ -4,7 +4,7 @@
 // Conținut în germană; note de strategie scurte în RO.
 // Moderne / Nachkriegsliteratur — Komödie (Tragikomödie) · Charakterisierung.
 // ⚠️ Dürrenmatt d.1990 = NU e gemeinfrei → doar citate scurte de studiu (verificate), fără reproducerea scenelor.
-// Subiect-I-Gedicht „Der Zauberlehrling" (Goethe, 1797, Auszug) verbatim verifiziert (gemeinfrei).
+// Prüfungsteil-I-Gedicht „Der Zauberlehrling" (Goethe, 1797, Auszug) verbatim verifiziert (gemeinfrei).
 // ============================================
 
 const theoryHTML = `
@@ -306,10 +306,10 @@ const trainingHTML = `
         <div class="muster-antwort" id="m10">Die <strong>Verantwortung der Wissenschaft</strong> im Atomzeitalter: Wissen kann die Menschheit vernichten, und der <strong>Einzelne</strong> kann die Gefahr nicht allein bannen — „<em>Was alle angeht, können nur alle lösen</em>". Der Zufall (von Zahnd) zeigt, wie <strong>machtlos</strong> das gute Handeln des Einzelnen gegen die groteske Wirklichkeit ist.</div>
     </div>
 
-    <h4 style="color:#065f46; margin:22px 0 8px;">✍️ Schreibvorlagen — Struktur für jedes Subiect</h4>
+    <h4 style="color:#065f46; margin:22px 0 8px;">✍️ Schreibvorlagen — Struktur für jeden Prüfungsteil</h4>
 
     <div class="vorlage">
-        <h5>A) Charakterisierung (Subiect II) — Einleitung / Hauptteil / Schluss</h5>
+        <h5>A) Charakterisierung (Prüfungsteil II) — Einleitung / Hauptteil / Schluss</h5>
         <div class="teil">Einleitung:</div>
         <p class="redemittel">„In der Komödie <em>Die Physiker</em> (1962) von Friedrich Dürrenmatt spielt die Figur des/der … eine zentrale Rolle."</p>
         <div class="teil">Hauptteil (Redemittel):</div>
@@ -336,7 +336,7 @@ const trainingHTML = `
         <p class="redemittel">Schluss: „Abschließend vertrete ich die Auffassung, dass …, weil …"</p>
     </div>
 
-    <div class="strategie">La Subiect II structura aduce 5 puncte: Einleitung (Werk/Autor/Jahr/Gattung) · Hauptteil cu Belege (scene) · Schluss cu deutung. Leagă de teme (Verantwortung / Zufall / Wahnsinn ↔ Vernunft)!</div>
+    <div class="strategie">La Prüfungsteil II structura aduce 5 puncte: Einleitung (Werk/Autor/Jahr/Gattung) · Hauptteil cu Belege (scene) · Schluss cu deutung. Leagă de teme (Verantwortung / Zufall / Wahnsinn ↔ Vernunft)!</div>
 `;
 
 // ============================================

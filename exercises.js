@@ -44,7 +44,7 @@ const ex2Data = {
 };
 
 const ex3Data = {
-    instr: '👇 Welcher Begriff ist gemeint? (wichtig für Subiect I &amp; II)',
+    instr: '👇 Welcher Begriff ist gemeint? (wichtig für Prüfungsteil I &amp; II)',
     questions: [
         { q: 'Ein Stück, das komisch und tragisch zugleich ist, heißt …', options: ['Tragikomödie', 'Ballade', 'Ode', 'Novelle'], correct: 0 },
         { q: 'Der überraschende Wendepunkt (durch Zufall) ist die …', options: ['schlimmstmögliche Wendung / Peripetie', 'Exposition', 'Anrede', 'Kadenz'], correct: 0 },
@@ -66,7 +66,7 @@ const ex4Data = {
 };
 
 const ex5Data = {
-    instr: '👇 Bewerbungsbrief (Subiect III): Wähle das Richtige.',
+    instr: '👇 Bewerbungsbrief (Prüfungsteil III): Wähle das Richtige.',
     questions: [
         { q: 'Welche zwei Elemente bringen je 2 Punkte?', options: ['Datum und Unterschrift', 'Betreffzeile und Anrede', 'Absender und Anlagen', 'Grußformel und Empfänger'], correct: 1 },
         { q: 'Welche Grußformel ist passend (formell)?', options: ['Tschüss und bis bald', 'Liebe Grüße', 'Mit freundlichen Grüßen', 'Servus'], correct: 2 },
