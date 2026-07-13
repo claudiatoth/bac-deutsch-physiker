@@ -120,7 +120,7 @@ function buildLueckentext(containerId, data, prefix) {
     let html = '<div class="exercise-instruction">' + data.instr + '</div>';
     data.items.forEach(function (it, i) {
         html += '<div class="exercise-item"><div class="exercise-number">' + (i + 1) + '</div><div class="input-group"><label>' +
-            it.before + ' <input type="text" id="' + prefix + '-in-' + i + '" placeholder="(' + it.hint + ')" autocomplete="off"> ' + it.after +
+            it.before + ' <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" id="' + prefix + '-in-' + i + '" placeholder="(' + it.hint + ')" autocomplete="off"> ' + it.after +
             '</label><div class="feedback" id="' + prefix + '-fb-' + i + '"></div></div></div>';
     });
     c.innerHTML = html;
